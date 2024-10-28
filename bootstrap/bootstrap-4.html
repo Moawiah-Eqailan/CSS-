@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Show Different Images Depending on Browser Width</h1>
+        <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+        <picture>
+            <source srcset="" media="(max-width: 600px)">
+            
+            <source srcset="https://via.placeholder.com/800x600.png?text=Medium+Image" media="(min-width: 601px) and (max-width: 1500px)">
+            <!-- Image for screen width larger than 1500px -->
+            <source srcset="https://via.placeholder.com/1200x900.png?text=Large+Image" media="(min-width: 1501px)">
+            <!-- Fallback image if none of the media conditions match -->
+            <img src="https://via.placeholder.com/800x600.png?text=Default+Image" alt="Responsive image" class="img-fluid">
+        </picture>
+    </div>
+</body>
+</html>
