@@ -7,12 +7,19 @@
     <title>CSS</title>
 
     <style>
-        h1 {
+      h1 {
             text-align: center;
         }
 
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        #body,
         a {
-            margin: 15px;
+         
+            width: 450px;
             padding: 10px;
             display: block;
             text-decoration: none;
@@ -23,14 +30,14 @@
         }
 
         a:hover {
-            transform: scale(1.02);
+            transform: scale(1.1);
         }
     </style>
 </head>
 
 <body>
+    <div id="body">
     <h1>All Tasks CSS</h1>
-    <hr>
     <a style="background-color:red ;" href="./Animation,Transition/index.html">Animation,Transition</a>
     <a style="background-color:blue ;" href="./bootstrap/index.html">Bootstrap</a>
     <a style="background-color:wheat ;" href="./CSS(Border ,Padding vs. Margin)/index.html">CSS(Border ,Padding vs.
@@ -45,6 +52,7 @@
         href="./CSS(Text,Font,Opacity,Overflow)/index.html">CSS(Text,Font,Opacity,Overflow)</a>
     <a style="background-color:magenta ;" href="./Grid/index.html">Grid</a>
     <a style="background-color:orange ;" href="./Position/index.html">Position</a>
+    </div>
 </body>
 
 </html>
